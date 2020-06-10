@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.2%" y="-4.9%" width="118.3%" height="109.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="弹框" transform="translate(-84.000000, -259.000000)" fill-rule="nonzero">
+            <g id="下拉" filter="url(#filter-1)" transform="translate(52.000000, 50.000000)">
+                <g id="icon" transform="translate(32.000000, 20.000000)">
+                    <g id="icon-注意事项" transform="translate(0.000000, 189.000000)">
+                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                        <path d="M13,1.375 C13.2761424,1.375 13.5,1.59885763 13.5,1.875 L13.5,14.125 C13.5,14.4011424 13.2761424,14.625 13,14.625 L3,14.625 C2.72385763,14.625 2.5,14.4011424 2.5,14.125 L2.5,1.875 C2.5,1.59885763 2.72385763,1.375 3,1.375 L13,1.375 Z M12.375,2.5 L3.625,2.5 L3.625,13.5 L12.375,13.5 L12.375,2.5 Z M6.925,11.5 C7.03545695,11.5 7.125,11.5895431 7.125,11.7 L7.125,12.425 C7.125,12.5354569 7.03545695,12.625 6.925,12.625 L5.075,12.625 C4.96454305,12.625 4.875,12.5354569 4.875,12.425 L4.875,11.7 C4.875,11.5895431 4.96454305,11.5 5.075,11.5 L6.925,11.5 Z M10.375,11 C10.7892136,11 11.125,11.3357864 11.125,11.75 C11.125,12.1642136 10.7892136,12.5 10.375,12.5 C9.96078644,12.5 9.625,12.1642136 9.625,11.75 C9.625,11.3357864 9.96078644,11 10.375,11 Z M10.7375,6.8125 C10.8479569,6.8125 10.9375,6.90204305 10.9375,7.0125 L10.9375,9.8625 C10.9375,9.97295695 10.8479569,10.0625 10.7375,10.0625 L10.0125,10.0625 C9.90204305,10.0625 9.8125,9.97295695 9.8125,9.8625 L9.8125,7.0125 C9.8125,6.90204305 9.90204305,6.8125 10.0125,6.8125 L10.7375,6.8125 Z M7.675,6.625 C7.78545695,6.625 7.875,6.71454305 7.875,6.825 L7.875,7.55 C7.875,7.66045695 7.78545695,7.75 7.675,7.75 L5.075,7.75 C4.96454305,7.75 4.875,7.66045695 4.875,7.55 L4.875,6.825 C4.875,6.71454305 4.96454305,6.625 5.075,6.625 L7.675,6.625 Z M10.925,4 C11.0354569,4 11.125,4.08954305 11.125,4.2 L11.125,4.925 C11.125,5.03545695 11.0354569,5.125 10.925,5.125 L5.075,5.125 C4.96454305,5.125 4.875,5.03545695 4.875,4.925 L4.875,4.2 C4.875,4.08954305 4.96454305,4 5.075,4 L10.925,4 Z" id="形状结合" fill="#303030"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

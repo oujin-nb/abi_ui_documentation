@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.2%" y="-4.9%" width="118.3%" height="109.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="弹框" transform="translate(-84.000000, -225.000000)" fill-rule="nonzero">
+            <g id="下拉" filter="url(#filter-1)" transform="translate(52.000000, 50.000000)">
+                <g id="icon" transform="translate(32.000000, 20.000000)">
+                    <g id="icon-检查跟踪" transform="translate(0.000000, 155.000000)">
+                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                        <path d="M14.875,7.40625 L12.965625,7.40625 C12.6953125,5.11875 10.88125,3.3046875 8.59375,3.034375 L8.59375,1.125 C8.59375,1.05625 8.5375,1 8.46875,1 L7.53125,1 C7.4625,1 7.40625,1.05625 7.40625,1.125 L7.40625,3.034375 C5.11875,3.3046875 3.3046875,5.11875 3.034375,7.40625 L1.125,7.40625 C1.05625,7.40625 1,7.4625 1,7.53125 L1,8.46875 C1,8.5375 1.05625,8.59375 1.125,8.59375 L3.034375,8.59375 C3.3046875,10.88125 5.11875,12.6953125 7.40625,12.965625 L7.40625,14.875 C7.40625,14.94375 7.4625,15 7.53125,15 L8.46875,15 C8.5375,15 8.59375,14.94375 8.59375,14.875 L8.59375,12.965625 C10.88125,12.6953125 12.6953125,10.88125 12.965625,8.59375 L14.875,8.59375 C14.94375,8.59375 15,8.5375 15,8.46875 L15,7.53125 C15,7.4625 14.94375,7.40625 14.875,7.40625 Z M8,11.8125 C5.89375,11.8125 4.1875,10.10625 4.1875,8 C4.1875,5.89375 5.89375,4.1875 8,4.1875 C10.10625,4.1875 11.8125,5.89375 11.8125,8 C11.8125,10.10625 10.10625,11.8125 8,11.8125 Z M8,6.5 C7.59875,6.5 7.22375,6.655 6.94,6.94 C6.65625,7.22375 6.5,7.59875 6.5,8 C6.5,8.40125 6.65625,8.77625 6.94,9.06 C7.22375,9.3425 7.6,9.5 8,9.5 C8.4,9.5 8.77625,9.34375 9.06,9.06 C9.3425,8.77625 9.5,8.4 9.5,8 C9.5,7.6 9.34375,7.22375 9.06,6.94 C8.77625,6.655 8.40125,6.5 8,6.5 Z" id="形状" fill="#303030"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

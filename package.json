@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "abs_element_ui": "^1.1.9",
+    "echarts": "^4.8.0",
     "element-ui": "^2.13.2",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",

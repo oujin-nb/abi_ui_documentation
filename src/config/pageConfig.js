@@ -68,7 +68,15 @@ export default [
                 "meta":{
                     "title":"动态菜单"
                 }
-            }
+            },
+            {
+                "url":"/echartPage",
+                "meta":{
+                    "title":"echarts"
+                }
+            },
+
+            
         ],
         meta: {
             title: "通用组件"

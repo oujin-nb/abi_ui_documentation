@@ -11,7 +11,16 @@
         <el-step title="步骤 3" description="Vue.use(absElementUi)"></el-step>
       </el-steps>
     </el-card> -->
-    <el-card class="box-card" style='margin-bottom:50px'>
+
+    <el-card class="box-card" style="margin-bottom:50px">
+      <div slot="header" class="clearfix">
+        <span></span>
+      </div>
+      <div class="candle_box" id='candleBox'></div>
+    </el-card>
+
+
+    <!-- <el-card class="box-card" style='margin-bottom:50px'>
       <div slot="header" class="clearfix">
         <span>说明</span>
       </div>
@@ -27,15 +36,21 @@
       <span class="expland_text" style="color:red">
         本项目不支持低版本浏览器(如 ie)，有需求请自行添加 polyfill 
       </span>
-    </el-card>
+    </el-card> -->
   </div>
 </template>
 <script>
+// 引入 ECharts 主模块
+
 export default {
   created() {},
   data() {
     return {};
-  }
+  },
+ 
+  getChartData(){
+
+  },
 };
 </script>
 <style lang="less" scoped>
@@ -43,5 +58,9 @@ export default {
   font-size: 14px;
   color: #182632;
   line-height: 30px;
+}
+.candle_box{
+  width: 100%;
+  height: 300px;
 }
 </style>

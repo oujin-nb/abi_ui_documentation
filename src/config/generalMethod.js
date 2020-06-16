@@ -2,19 +2,8 @@ import { Message } from 'element-ui'
 import Moment from 'moment'
 import Vue from 'vue'
 // 工具类
-let obj = {
-    //字符串空值
-    isStrNUll: function (str) {
-        return str !== null && str !== '' && str !== undefined
-    },
-    // 往storage内存入对象
-    setStorage: function (key, obt) {
-        localStorage.setItem(key, JSON.stringify(obt))
-    },
-    // 从storage内取出对象
-    getStorage: function (key) {
-        return JSON.parse(localStorage.getItem(key))
-    },
+export default {
+ 
     //将首字母转成大写
     convertToCamelCase(str) {
         return str[0].toUpperCase() + str.substring(1)
@@ -24,8 +13,8 @@ let obj = {
         return str ? str[0].toLowerCase() + str.substring(1) : ''
     },
     // 获取url内某个参数
-    getQueryString(name) {
-        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+    getQueryString(key) {
+        var reg = new RegExp('(^|&)' + key + '=([^&]*)(&|$)', 'i');
         var r = window.location.search.substr(1).match(reg);
         if (r != null) {
             return unescape(r[2]);
@@ -52,10 +41,10 @@ let obj = {
         return obj;
     },
     // 将对象转换为url参数
-    convertObj(data) {
+    convertObj(obj) {
         var _result = [];
-        for (var key in data) {
-            var value = data[key];
+        for (var key in obj) {
+            var value = obj[key];
             if (value.constructor == Array) {
                 value.forEach(function (_value) {
                     _result.push(key + "=" + _value);
@@ -249,7 +238,7 @@ let obj = {
         }
     },
     // 节流
-    throttle(fn, wait) {
+    throttle(fn, wait=50) {
         let inThrottle, lastFn, lastTime;
         return function () {
             const context = this, args = arguments;
@@ -317,8 +306,8 @@ let obj = {
     },
 
     // 导出表格的方法
-    exportOutXLSX() {
-        let dom = document.querySelector('#exportTable')
+    exportOutXLSX(id) {
+        let dom = document.querySelector(id)
         let wb = XLSX.utils.table_to_book(dom, { raw: true }) // raw-解决默认把内容是数字的字符串当做数字处理导致数字前的0丢失的问题
         let wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'binary' })
         saveAs(new Blob([xlsxToArrayBuffer(wbout)], { type: 'application/octet-stream' }), 'testSheet.xlsx')
@@ -370,4 +359,3 @@ let obj = {
     }
 
 }
-export default obj

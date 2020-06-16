@@ -12,12 +12,12 @@
       </el-steps>
     </el-card> -->
 
-    <el-card class="box-card" style="margin-bottom:50px">
+    <!-- <el-card class="box-card" style="margin-bottom:50px">
       <div slot="header" class="clearfix">
         <span></span>
       </div>
       <div class="candle_box" id='candleBox'></div>
-    </el-card>
+    </el-card> -->
 
 
     <!-- <el-card class="box-card" style='margin-bottom:50px'>

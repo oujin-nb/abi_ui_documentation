@@ -70,6 +70,14 @@ export default [
                 }
             },
             {
+                "url":"/editbleInfo",
+                "meta":{
+                    "title":"可编辑信息栏"
+                }
+            },
+
+            
+            {
                 "url":"/echartPage",
                 "meta":{
                     "title":"echarts"
@@ -80,6 +88,18 @@ export default [
         ],
         meta: {
             title: "通用组件"
+        }
+    },
+    {
+        "url":"/generalFcn",
+        "meta":{
+            "title":"通用方法"
+        }
+    },
+    {
+        "url":"/generalStyle",
+        "meta":{
+            "title":"通用样式"
         }
     },
  

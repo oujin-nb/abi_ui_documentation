@@ -19,6 +19,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
+
 /*滚动条整体部分,必须要设置*/
 ::-webkit-scrollbar {
   // background-color: #999999;
@@ -44,6 +45,9 @@ export default {
 .el-card__header {
   background: #f8f8f8;
   color: #182632;
+}
+.el-button{
+      padding: 8px 22px !important;
 }
 .el-card__body {
   pre {

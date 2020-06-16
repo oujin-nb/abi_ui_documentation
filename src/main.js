@@ -4,7 +4,7 @@
 import './common/utils/iconConfig'
 import '../static/scss/index.scss'
 // import '../static/element-ui-theme/index.js'
-import 'element-ui/lib/theme-chalk/index.css';
+// import 'element-ui/lib/theme-chalk/index.css';
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -17,13 +17,13 @@ import element from './plugins/elementComponent.js'
 // import http from './api/index.js'
 import utils from './common/utils/index'
 import fcnTemplate from '../src/factory/fcnTemplate'
-import absElementUi from 'abs_element_ui'
-import VueHighlightJS from 'vue-highlightjs'
+// import absElementUi from 'abs_element_ui'
+// import VueHighlightJS from 'vue-highlightjs'
 // Tell Vue.js to use vue-highlightjs
-Vue.use(VueHighlightJS)
+// Vue.use(VueHighlightJS)
 Vue.use(components)
 Vue.use(element)
-Vue.use(absElementUi)
+// Vue.use(absElementUi)
 // Vue.use(ElementUI, {size: 'small'})
 // Vue.use(VueAxios, axios)
 Vue.prototype.$bus = new Vue()

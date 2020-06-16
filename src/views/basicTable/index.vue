@@ -21,7 +21,7 @@
         ></BasicTable>
       </div>
     </el-card>
-    <el-card class="expland_text" shadow="hover" style="margin-top: 50px;">
+    <el-card class="expland_text box-card" shadow="hover" style="margin-top: 50px;">
       <div slot="header" class="box-header content">
         <span>说明</span>
       </div>
@@ -35,7 +35,6 @@
         <span>参数说明</span>
       </div>
       <TreeTable
-        border
         :expandAll="true"
         :opt="paramOpt"
         highlight-current-row
@@ -50,119 +49,119 @@
       </div>
 
       <pre v-highlightjs><code class="javascript" style="background:	#4B4B4B">
-export default {
-  created() {},
-  data() {
-    return {
-      obt: {
-        pd: [
-          {
-            label: "字典1",
-            prop: "item1",
-            sort: true,
-            fix: true,
-            width: "200"
-          },
-          {
-            label: "字典2",
-            prop: "item2",
-            sort: false,
-            fix: "right",
-            width: "200",
-            type:'butGroup',
-            butList:[
-               { text: "提交", fcn: "submit" },
-               { text: "取消", type: "danger", fcn: "cancel" }
-            ]
-          },
-          { label: "字典3", prop: "item3", sort: true, width: "100" },
-          {
-            label: "字典4",
-            prop: "item4",
-            type: "switch",
-            width: "100",
-            fcn: "switchFcn"
-          },
-          {
-            label: "字典5",
-            prop: "item5",
-            type: "button",
-            width: "200",
-            fcn: "clickFcn"
-          },
-          {
-            label: "字典6",
-            prop: "item6",
-            type: "input",
-            width: "100",
-            fcn: "inputFcn"
-          },
-          {
-            label: "字典7",
-            prop: "item7",
-            type: "checkbox",
-            width: "100",
-            fcn: "checkFcn"
-          }
-        ],
-        data: [
-          {
-            item1: "123",
-            item2: "123",
-            item3: "123",
-            item4: true,
-            item5: "123",
-            item6: "123",
-            item7: true
-          },
-          {
-            item1: "123",
-            item2: "123",
-            item3: "123",
-            item4: false,
-            item5: "123",
-            item6: "123",
-            item7: false
-          },
-          {
-            item1: "123",
-            item2: "123",
-            item3: "123",
-            item4: true,
-            item5: "123",
-            item6: "123",
-            item7: true
-          },
-          {
-            item1: "123",
-            item2: "123",
-            item3: "123",
-            item4: false,
-            item5: "123",
-            item6: "123",
-            item7: false
-          },
-          {
-            item1: "123",
-            item2: "123",
-            item3: "123",
-            item4: true,
-            item5: "123",
-            item6: "123",
-            item7: true
-          }
-        ]
-      }
-    };
-  },
-  methods: {
-    event(s, type) {
-      this.$message("哇,你竟然触发了" + type + "事件");
-      console.log(type);
-      console.log(s);
-    }
-  }
-};
+              export default {
+                created() {},
+                data() {
+                  return {
+                    obt: {
+                      pd: [
+                        {
+                          label: "字典1",
+                          prop: "item1",
+                          sort: true,
+                          fix: true,
+                          width: "200"
+                        },
+                        {
+                          label: "字典2",
+                          prop: "item2",
+                          sort: false,
+                          fix: "right",
+                          width: "200",
+                          type:'butGroup',
+                          butList:[
+                            { text: "提交", fcn: "submit" },
+                            { text: "取消", type: "danger", fcn: "cancel" }
+                          ]
+                        },
+                        { label: "字典3", prop: "item3", sort: true, width: "100" },
+                        {
+                          label: "字典4",
+                          prop: "item4",
+                          type: "switch",
+                          width: "100",
+                          fcn: "switchFcn"
+                        },
+                        {
+                          label: "字典5",
+                          prop: "item5",
+                          type: "button",
+                          width: "200",
+                          fcn: "clickFcn"
+                        },
+                        {
+                          label: "字典6",
+                          prop: "item6",
+                          type: "input",
+                          width: "100",
+                          fcn: "inputFcn"
+                        },
+                        {
+                          label: "字典7",
+                          prop: "item7",
+                          type: "checkbox",
+                          width: "100",
+                          fcn: "checkFcn"
+                        }
+                      ],
+                      data: [
+                        {
+                          item1: "测试",
+                          item2: "测试",
+                          item3: "测试",
+                          item4: true,
+                          item5: "测试",
+                          item6: "测试",
+                          item7: true
+                        },
+                        {
+                          item1: "测试",
+                          item2: "测试",
+                          item3: "测试",
+                          item4: false,
+                          item5: "测试",
+                          item6: "测试",
+                          item7: false
+                        },
+                        {
+                          item1: "测试",
+                          item2: "测试",
+                          item3: "测试",
+                          item4: true,
+                          item5: "测试",
+                          item6: "测试",
+                          item7: true
+                        },
+                        {
+                          item1: "测试",
+                          item2: "测试",
+                          item3: "测试",
+                          item4: false,
+                          item5: "测试",
+                          item6: "测试",
+                          item7: false
+                        },
+                        {
+                          item1: "测试",
+                          item2: "测试",
+                          item3: "测试",
+                          item4: true,
+                          item5: "测试",
+                          item6: "测试",
+                          item7: true
+                        }
+                      ]
+                    }
+                  };
+                },
+                methods: {
+                  event(s, type) {
+                    this.$message("哇,你竟然触发了" + type + "事件");
+                    console.log(type);
+                    console.log(s);
+                  }
+                }
+              };
         </code></pre>
     </el-card>
   </div>
@@ -173,16 +172,14 @@ export default {
   data() {
     return {
       obt: {
+        indexAble:true,
         pd: [
           {
-            label: "字典1",
+            label: "文字",
             prop: "item1",
-            sort: true,
-            fix: true,
-            width: "200"
           },
           {
-            label: "字典2",
+            label: "按钮组",
             prop: "item2",
             sort: false,
             fix: "right",
@@ -193,30 +190,30 @@ export default {
                { text: "取消", type: "danger", fcn: "cancel" }
             ]
           },
-          { label: "字典3", prop: "item3", sort: true, width: "100" },
+          { label: "可排序", prop: "item3", sort: true, width: "100" },
           {
-            label: "字典4",
+            label: "滑块",
             prop: "item4",
             type: "switch",
             width: "100",
             fcn: "switchFcn"
           },
           {
-            label: "字典5",
+            label: "按钮",
             prop: "item5",
             type: "button",
             width: "200",
             fcn: "clickFcn"
           },
           {
-            label: "字典6",
+            label: "输入框",
             prop: "item6",
             type: "input",
             width: "100",
             fcn: "inputFcn"
           },
           {
-            label: "字典7",
+            label: "单选框",
             prop: "item7",
             type: "checkbox",
             width: "100",
@@ -225,48 +222,49 @@ export default {
         ],
         data: [
           {
-            item1: "123",
-            item2: "123",
-            item3: "123",
+            lockFlag:true,
+            item1: "测试",
+            item2: "测试",
+            item3: "测试",
             item4: true,
-            item5: "123",
-            item6: "123",
+            item5: "测试",
+            item6: "测试",
             item7: true
           },
           {
-            item1: "123",
-            item2: "123",
-            item3: "123",
+            item1: "测试",
+            item2: "测试",
+            item3: "测试",
             item4: false,
-            item5: "123",
-            item6: "123",
+            item5: "测试",
+            item6: "测试",
             item7: false
           },
           {
-            item1: "123",
-            item2: "123",
-            item3: "123",
+            item1: "测试",
+            item2: "测试",
+            item3: "测试",
             item4: true,
-            item5: "123",
-            item6: "123",
+            item5: "测试",
+            item6: "测试",
             item7: true
           },
           {
-            item1: "123",
-            item2: "123",
-            item3: "123",
+            item1: "测试",
+            item2: "测试",
+            item3: "测试",
             item4: false,
-            item5: "123",
-            item6: "123",
+            item5: "测试",
+            item6: "测试",
             item7: false
           },
           {
-            item1: "123",
-            item2: "123",
-            item3: "123",
+            item1: "测试",
+            item2: "测试",
+            item3: "测试",
             item4: true,
-            item5: "123",
-            item6: "123",
+            item5: "测试",
+            item6: "测试",
             item7: true
           }
         ]
